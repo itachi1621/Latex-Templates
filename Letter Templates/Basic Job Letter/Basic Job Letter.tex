@@ -1,0 +1,47 @@
+% XeTeX Environment Used
+\documentclass[12pt,letterpaper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage[british]{babel}
+\usepackage{CormorantGaramond}
+\usepackage{xcolor}
+\def \CompanyName {Tools Inc} % Company name
+\def \CompanyAddress{New York St.Clair Street}
+\def \CompanyCity{Queens}
+\def \CompanyContact{111-111-1111}
+\def \CompanySigner{Jane Doe}
+\def \CompanySignerPosition{Manager}
+\def \CompanySignerContact{111-123-1234}
+\def \name {John Doe } % Enter Persons Full name here
+\def \surname{Doe}% Enter Persons Lastname
+\def \position {Occupational Cleaner }
+\def \income {\$4000}% Amount person earns
+\def \incomeInWords{Four Thousand Dollars}% Persons income in words
+\begin{document} 
+\pagestyle{empty}
+\begin{center}
+\textbf{
+\bfseries \LARGE \color{blue} \CompanyName \large \color{black} \\ \CompanyAddress\\\CompanyCity\\\CompanyContact \\[2.5cm]}
+\end{center}
+
+\begin{flushleft}
+
+\today
+ \large \textbf{\\[3cm]To whom it may concern:}
+\\[1cm]
+\normalsize This is to verify that Ms. \name has been employed with my company for the past eight years as a \position, she receives a monthly income of \income  (\incomeInWords). 
+
+ 
+
+If you require any additional information regarding Ms. \surname, please feel free to contact me personally at \CompanySignerContact.\\[1cm]
+ 
+Yours Respectfully\\[3cm] 
+
+\end{flushleft} 
+
+\noindent\begin{tabular}{ll}
+\makebox[2.6in]{\hrulefill}\\
+\CompanySigner\\(\CompanySignerPosition)\\[0.4cm]
+\end{tabular}
+ 
+\end{document}
